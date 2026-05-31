@@ -4,8 +4,16 @@
 An IP address identifies a device on a network.
 
 ## Types of IP Addresses
-- Public IP
+- Public IP:
+
+10.0.0.0 - 10.255.255.255 (10/8)
+172.16.0.0 - 172.31.255.255 (172.16/12)
+192.168.0.0 - 192.168.255.255 (192.168/16)
+
 - Private IP
+ 
+- commands :
+ifconfig
 
 ## Common Ports
 - 80 → HTTP
