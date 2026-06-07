@@ -1,1 +1,179 @@
 
+# SIEM Notes
+
+## What is SIEM?
+
+Security Information and Event Management is a security solution used to:
+
+* Collect logs
+* Monitor systems
+* Detect threats
+* Generate alerts
+* Support incident response
+
+---
+
+# SIEM Workflow
+
+```text
+Devices/Servers
+      ↓
+Log Collection
+      ↓
+SIEM Analysis
+      ↓
+Correlation Rules
+      ↓
+Alerts & Dashboards
+```
+
+---
+
+# Main Functions
+
+| Function         | Purpose                        |
+| ---------------- | ------------------------------ |
+| Log Collection   | Gather logs from systems       |
+| Monitoring       | Continuous security monitoring |
+| Correlation      | Link related events            |
+| Alerting         | Notify suspicious activity     |
+| Visualization    | Dashboards & graphs            |
+| Threat Detection | Detect attacks/anomalies       |
+
+---
+
+# Common Log Sources
+
+* Firewalls
+* Routers
+* Servers
+* IDS/IPS
+* Windows Event Logs
+* Linux Syslogs
+* DNS Servers
+* Web Servers
+* Antivirus
+
+---
+
+# Important SIEM Components
+
+## Log Collector
+
+Collects logs from devices.
+
+## Correlation Engine
+
+Detects suspicious patterns.
+
+Example:
+
+* Multiple failed logins
+* Port scans
+* Malware activity
+
+## Dashboard
+
+Displays alerts and system activity.
+
+## Alerting System
+
+Generates warnings for threats.
+
+---
+
+# SIEM Detection Examples
+
+| Activity               | Detection          |
+| ---------------------- | ------------------ |
+| Failed logins          | Brute force attack |
+| Multiple ports scanned | Port scanning      |
+| Unusual DNS traffic    | DNS tunneling      |
+| Large outbound traffic | Data exfiltration  |
+| Suspicious PowerShell  | Malware activity   |
+
+---
+
+# Types of Logs
+
+| Log Type            | Example         |
+| ------------------- | --------------- |
+| Authentication Logs | Login attempts  |
+| Network Logs        | IP traffic      |
+| Application Logs    | Web server logs |
+| Security Logs       | IDS/IPS alerts  |
+
+---
+
+# Popular SIEM Tools
+
+* [Splunk](https://www.splunk.com?utm_source=chatgpt.com)
+* [Wazuh](https://wazuh.com?utm_source=chatgpt.com)
+* [Elastic Security](https://www.elastic.co/security?utm_source=chatgpt.com)
+* [IBM QRadar](https://www.ibm.com/qradar?utm_source=chatgpt.com)
+
+---
+
+# Important Terms
+
+| Term           | Meaning                    |
+| -------------- | -------------------------- |
+| Event          | Single log/activity        |
+| Alert          | Warning generated          |
+| Correlation    | Linking events             |
+| False Positive | Benign event flagged       |
+| IOC            | Indicator of Compromise    |
+| SOC            | Security Operations Center |
+
+---
+
+# Example: Brute Force Detection
+
+```text
+50 Failed Logins
+        ↓
+Correlation Rule Triggered
+        ↓
+SIEM Alert Generated
+```
+
+---
+
+# Advantages
+
+* Centralized monitoring
+* Faster threat detection
+* Better visibility
+* Automated alerts
+
+---
+
+# Limitations
+
+* False positives
+* Requires tuning
+* High storage usage
+
+---
+
+# Basic Linux Log Commands
+
+Authentication logs:
+
+```bash
+cat /var/log/auth.log
+```
+
+System logs:
+
+```bash
+cat /var/log/syslog
+```
+
+---
+
+# Windows Security Logs
+
+```text
+Event Viewer → Windows Logs → Security
+```
