@@ -139,16 +139,16 @@ SIEM Alert Generated
 
 ---
 
-# Advantages
+## Advantages
 
-* Centralized monitoring
+* Centralised monitoring
 * Faster threat detection
 * Better visibility
 * Automated alerts
 
 ---
 
-# Limitations
+## Limitations
 
 * False positives
 * Requires tuning
@@ -156,7 +156,7 @@ SIEM Alert Generated
 
 ---
 
-# Basic Linux Log Commands
+## Basic Linux Log Commands
 
 Authentication logs:
 
@@ -177,3 +177,115 @@ cat /var/log/syslog
 ```text
 Event Viewer → Windows Logs → Security
 ```
+
+# CIA Triad Notes
+
+## What is CIA Triad?
+
+The CIA Triad is a core cybersecurity model based on:
+
+* Confidentiality
+* Integrity
+* Availability
+
+It helps protect information and systems.
+
+---
+
+## 1. Confidentiality
+
+Protecting data from unauthorised access.
+Only authorised users should access information.
+
+## Examples
+
+* Passwords
+* Encryption
+* MFA (Multi-Factor Authentication)
+* Access control
+
+## Threats
+
+* Data breaches
+* Phishing
+* Insider attacks
+
+---
+
+# 2. Integrity
+Ensuring data is accurate and unmodified.
+Prevent unauthorized changes.
+
+## Examples
+* Hashing
+* Checksums
+* Digital signatures
+* File permissions
+
+## Threats
+
+* Malware
+* Data tampering
+* SQL injection
+
+---
+
+# 3. Availability
+Ensuring systems and data remain accessible.
+
+Authorised users can access services when needed.
+
+## Examples
+
+* Backups
+* Redundancy
+* Load balancing
+* Disaster recovery
+
+## Threats
+
+* DDoS attacks
+* Hardware failure
+* Ransomware
+
+---
+
+## CIA Triad Table
+
+| Principle       | Purpose                  | Example    |
+| --------------- | ------------------------ | ---------- |
+| Confidentiality | Protect data access      | Encryption |
+| Integrity       | Maintain accurate data   | Hashing    |
+| Availability    | Ensure access to systems | Backups    |
+
+---
+
+## Real-World Examples
+
+| Scenario                 | CIA Principle   |
+| ------------------------ | --------------- |
+| Bank password protection | Confidentiality |
+| Detecting modified files | Integrity       |
+| Website uptime           | Availability    |
+
+---
+
+## Importance of CIA Triad
+
+* Foundation of cybersecurity
+* Helps design secure systems
+* Used in risk management
+* Supports security policies
+
+---
+
+## Common Security Controls
+
+| Control      | CIA Category    |
+| ------------ | --------------- |
+| Encryption   | Confidentiality |
+| Hashing      | Integrity       |
+| Backups      | Availability    |
+| MFA          | Confidentiality |
+| RAID Storage | Availability    |
+
