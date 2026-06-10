@@ -237,3 +237,40 @@ Practice:
 * HTTP requests
 * suspicious packets
 * malware traffic
+* | Port    | Protocol | Service         | Why It's Important                                 |
+| ------- | -------- | --------------- | -------------------------------------------------- |
+| 20/21   | TCP      | FTP             | File transfer; credentials often sent in plaintext |
+| 22      | TCP      | SSH             | Secure remote login; common brute-force target     |
+| 23      | TCP      | Telnet          | Insecure remote access; sends data in plaintext    |
+| 25      | TCP      | SMTP            | Email sending; used in phishing investigations     |
+| 53      | TCP/UDP  | DNS             | Domain name resolution; DNS tunneling/exfiltration |
+| 67/68   | UDP      | DHCP            | Automatic IP assignment                            |
+| 69      | UDP      | TFTP            | Simple file transfer; no authentication            |
+| 80      | TCP      | HTTP            | Unencrypted web traffic                            |
+| 88      | TCP/UDP  | Kerberos        | Windows authentication                             |
+| 110     | TCP      | POP3            | Email retrieval; insecure unless encrypted         |
+| 123     | UDP      | NTP             | Time synchronization                               |
+| 135     | TCP      | MS RPC          | Windows remote procedure calls                     |
+| 137-139 | TCP/UDP  | NetBIOS         | Windows file and printer sharing                   |
+| 143     | TCP      | IMAP            | Email retrieval                                    |
+| 161/162 | UDP      | SNMP            | Network device monitoring                          |
+| 389     | TCP/UDP  | LDAP            | Directory services, Active Directory               |
+| 443     | TCP      | HTTPS           | Secure web traffic                                 |
+| 445     | TCP      | SMB             | Windows file sharing; ransomware favorite          |
+| 514     | UDP      | Syslog          | Log collection for SIEM                            |
+| 636     | TCP      | LDAPS           | Secure LDAP                                        |
+| 993     | TCP      | IMAPS           | Secure IMAP                                        |
+| 995     | TCP      | POP3S           | Secure POP3                                        |
+| 1433    | TCP      | MSSQL           | Microsoft SQL Server                               |
+| 1521    | TCP      | Oracle DB       | Oracle database service                            |
+| 2049    | TCP/UDP  | NFS             | Linux file sharing                                 |
+| 3306    | TCP      | MySQL           | Popular database                                   |
+| 3389    | TCP      | RDP             | Remote Desktop; common attack vector               |
+| 5432    | TCP      | PostgreSQL      | Database service                                   |
+| 5900    | TCP      | VNC             | Remote desktop access                              |
+| 5985    | TCP      | WinRM           | Windows remote management                          |
+| 6379    | TCP      | Redis           | In-memory database                                 |
+| 8080    | TCP      | HTTP Alternate  | Often used by web applications                     |
+| 8443    | TCP      | HTTPS Alternate | Secure web applications                            |
+| 9200    | TCP      | Elasticsearch   | SIEM and log storage systems                       |
+
