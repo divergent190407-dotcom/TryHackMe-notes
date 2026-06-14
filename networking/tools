@@ -1,1 +1,5 @@
-
+## ping
+Ping works using the ICMP protocol,The ICMP protocol works on the Network layer of the OSI Model
+to change the interval of sent ping requests: -i
+to restrict requests to IPv4: -4
+a more verbose output: -v
