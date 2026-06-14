@@ -3,3 +3,10 @@ Ping works using the ICMP protocol,The ICMP protocol works on the Network layer 
 to change the interval of sent ping requests: -i
 to restrict requests to IPv4: -4
 a more verbose output: -v
+## traceroute
+The logical follow-up to the ping command is traceroute. Traceroute can be used to map the path your request takes as it heads to the lab machine.
+-i for interface
+-T for tcp syn request
+## whois
+it tells u everything about the network.
+
