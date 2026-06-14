@@ -44,26 +44,15 @@ tcp.flags.syn == 1
 
 # 2. OSI Model
 
-Very important for exams/interviews.
-
 Learn:
 
 * all 7 layers
 * protocols at each layer
 * devices at each layer
 
-Mnemonic:
-
-```plaintext id="c4y0zh"
-Please Do Not Throw Sausage Pizza Away
-```
-
----
-
 # 3. TCP Handshake
-
-Deeply understand:
-
+it is a connection based protocol
+before sending any data via tcp, we need to do the computer connection through three way handshake. 
 SYN \rightarrow SYNACK \rightarrow ACK
 
 Learn:
@@ -73,6 +62,8 @@ Learn:
 * connection establishment
 
 ---
+<img width="259" height="279" alt="image" src="https://github.com/user-attachments/assets/21778da8-f3df-46bc-ab0f-dfc7668f09be" />
+
 
 # 4. ARP
 
