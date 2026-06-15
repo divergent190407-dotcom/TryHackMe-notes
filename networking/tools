@@ -9,4 +9,7 @@ The logical follow-up to the ping command is traceroute. Traceroute can be used 
 -T for tcp syn request
 ## whois
 it tells u everything about the network.
+# siem tools
+## splunk
+help security professionals to review and analyze an organization's data.
 
