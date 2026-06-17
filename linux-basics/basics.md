@@ -1,1 +1,13 @@
-
+ls
+cd
+pwd
+grep
+find
+chmod
+chown
+curl
+wget
+ps
+top
+nano
+vim
