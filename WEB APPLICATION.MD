@@ -1,4 +1,11 @@
 # Learn
+
+## Websites are primarily created using:
+
+- HTML, to build websites and define their structure
+- CSS, to make websites look pretty by adding styling options
+- JavaScript, implement complex features on pages using interactivity
+
 ## HTTP Requests
 ## Cookies
 ## Sessions
