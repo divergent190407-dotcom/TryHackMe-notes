@@ -34,6 +34,7 @@ nmap scanme.nmap.org
 nmap -sT <target>
 * Completes full TCP handshake
 * Does not require root privileges
+* if we send syn flag set to a closed port, it will respond with a rst (reset) flag set.
 
 ### SYN Scan (Stealth Scan)
 sudo nmap -sS <target>
@@ -47,6 +48,8 @@ sudo nmap -sS <target>
 sudo nmap -sU <target>
 * Scans UDP ports
 * Slower than TCP scans
+* When a packet is sent to an open port, there is no response, which means open/filtered.
+* When sent to a closed port, it gives a message (that the server is unreachable) through an ICMP packet.
 
 ### Ping Scan
 nmap -sn <target>
