@@ -13,6 +13,8 @@
 ## Authorization
 # Attacks
 ## SQL Injection
+- when you are able to manipulate the SQL queries that the web application sends to its database.
+- The consequences can be severe: unauthorised access to sensitive data, bypassed authentication, modified or deleted records, and in some cases, full control of the database server itself.
 ## XSS
 ## IDOR
 ## File Upload Vulnerabilities
